@@ -21,9 +21,11 @@ def ocr_pdf_to_text(pdf_folder, text_folder):
                 text = pytesseract.image_to_string(image, lang='rus')
                 text_content += f"--- Страница {i + 1} ---n{text}n"
 
-            # Сохраняем извлеченный текст в файл
             text_filename = os.path.splitext(filename)[0] + 'rus' + '.txt'
             text_path = os.path.join(text_folder, text_filename)
+            if os.path.exists(text_path):
+                print(f'Файл {text_path} уже существует')
+                continue
             with open(text_path, 'w', encoding='utf-16') as text_file:
                 text_file.write(text_content)
             print(f'Сохранен текстовый файл: {text_path}')
