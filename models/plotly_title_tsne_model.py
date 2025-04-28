@@ -5,7 +5,7 @@ from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 import plotly.express as px
-
+#старая версия с tsne и визуализацией
 
 csv_file = '../output.csv'
 data = pd.read_csv(csv_file, header=None, names=['Название файла', 'Ссылка на файл', 'Заголовок'], encoding='utf-16')

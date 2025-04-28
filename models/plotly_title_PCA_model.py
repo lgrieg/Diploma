@@ -4,7 +4,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
 import plotly.express as px
-
+##старая модель с методом главных компонент и названием
+#есть визуализация в плотли
 
 csv_file = '../output.csv'
 data = pd.read_csv(csv_file, header=None, names=['Название файла', 'Ссылка на файл', 'Заголовок'], encoding='utf-16')
