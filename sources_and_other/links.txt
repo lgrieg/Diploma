@@ -1,4 +1,9 @@
 Здесь собираю ссылки, которые смтрела, когда решала задачки
+Kuratov, Y., Arkhipov, M. (2019). Adaptation of Deep Bidirectional Multilingual Transformers for Russian Language. arXiv preprint arXiv:1905.07213.
+https://arxiv.org/pdf/1905.07213
+https://docs.deeppavlov.ai/en/master/features/models/bert.html
+
+https://habr.com/ru/articles/778048/
 https://www.youtube.com/watch?v=55IKVSB5AoM
 https://habr.com/ru/articles/324540/
 https://habr.com/ru/articles/304214/

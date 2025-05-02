@@ -1,10 +1,13 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.tree import plot_tree
 from sklearn.decomposition import PCA
 import plotly.express as px
+from sklearn.manifold import TSNE
 
 
 csv_file = '../output.csv'
@@ -35,8 +38,15 @@ num_clusters = 5
 kmeans = KMeans(n_clusters=num_clusters, random_state=42)
 kmeans.fit(X)
 
+#дерево решений чтобы понять почему оно так странно раскидывет
 decision_tree = DecisionTreeClassifier()
 decision_tree.fit(X, kmeans.labels_)
+
+plt.figure(figsize=(15, 10))
+
+plot = plot_tree(decision_tree, feature_names = list(vectorizer.get_feature_names_out()))
+plt.show()
+
 # Переводим в 2D через PCA 
 # работает плохо -- все в одном месте возможно из-за того что отнормировать не получается 
 # можно попробовать нормально отнормировать или применить что-то другое
