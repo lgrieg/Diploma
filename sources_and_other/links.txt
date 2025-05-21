@@ -2,6 +2,12 @@
 Kuratov, Y., Arkhipov, M. (2019). Adaptation of Deep Bidirectional Multilingual Transformers for Russian Language. arXiv preprint arXiv:1905.07213.
 https://arxiv.org/pdf/1905.07213
 https://docs.deeppavlov.ai/en/master/features/models/bert.html
+https://www.youtube.com/watch?v=lX-3nGHDhQg
+
+https://lifehacker.ru/programmy-dlya-raboty-s-fajlami/
+
+Arkhipov M., Trofimova M., Kuratov Y., Sorokin A. (2019). Tuning Multilingual Transformers for Language-Specific Named Entity Recognition . ACL anthology W19-3712.
+https://aclanthology.org/W19-3712/
 
 https://habr.com/ru/articles/778048/
 https://www.youtube.com/watch?v=55IKVSB5AoM

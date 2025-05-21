@@ -114,4 +114,4 @@ for i in range(len(data)):
     )
 
 
-fig.write_html('fulltext_BERT_tsne.html')
+fig.write_html('check_fulltext_BERT_tsne.html')
